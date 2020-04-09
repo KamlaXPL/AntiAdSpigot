@@ -36,8 +36,8 @@ public class AntiAdListener implements Listener {
 
         event.setCancelled(true);
 
-        textChannel.sendTyping()
-                .queue();
+        textChannel.sendTyping().queue();
+        
         textChannel.sendMessage(new EmbedBuilder()
                 .setTitle(plugin.getConfiguration().getTitle())
                 .setDescription(plugin.getConfiguration().getDescription()
