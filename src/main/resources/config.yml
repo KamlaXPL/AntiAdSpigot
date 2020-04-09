@@ -1,0 +1,18 @@
+minecraft:
+  blocked_words:
+    - ".pl"
+    - ",pl"
+  permission: "kamlax.antiad"
+  #Czy gracze z permisją wyżej mają być ignorowani podczas wpisania zablokowanego słowa?
+  # true - nie, ich wiadomość nie powinna być zablokowana
+  # false - tak, ich wiadomość powinna zostać zablokowana
+  bypass: true
+  message:
+    - "&8>> &7Gracz &c{PLAYER} &7probowal zareklamowac serwer!"
+    - "&8>> &7Jego wiadomosc: &c{MESSAGE}"
+discord:
+  bot_token: "token"
+  channel_id: "id"
+  embed:
+    title: "AntyReklama"
+    description: "Gracz **{PLAYER}** chcial zareklamowac serwer! Jego wiadomosc: **{MESSAGE}**"

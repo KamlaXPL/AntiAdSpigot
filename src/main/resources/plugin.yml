@@ -1,0 +1,5 @@
+name: AntiAdSpigot
+author: KamlaX
+version: 1.0
+description: Plugin na antyreklame zintegrowany z discordem
+main: me.kamlax.antiad.AntiAdPlugin
