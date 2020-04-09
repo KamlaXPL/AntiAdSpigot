@@ -7,19 +7,13 @@ import java.util.List;
 public class AntiAdConfiguration {
     private final AntiAdPlugin plugin;
 
-    private boolean discordBot;
-    private List<String> blockedWords;
-    private String permission;
+    private List<String> blockedWords, message;
+    private String permission, token, channelID, title, description;
     private boolean bypass;
-    private List<String> message;
-    private String token;
-    private String channelID;
-    private String title;
-    private String description;
-
+    
     public AntiAdConfiguration(AntiAdPlugin plugin) {
         this.plugin = plugin;
-        loadConfiguration();
+        this.loadConfiguration();
     }
 
     private void loadConfiguration() {
